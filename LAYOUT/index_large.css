@@ -1,0 +1,9 @@
+@media screen and (min-width: 600px) {
+    div#gameboyContainer {
+        width: 50%;
+    }
+    div#gameboy {
+        width: 45%;
+        aspect-ratio: 5/7.5;
+    }
+}

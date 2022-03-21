@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>BLUE-dex</title>
+</head>
+
+<body>
+
+    <h1>BLUE-dex</h1>
+
+    <section>
+
+        <% pokedex.forEach((pokemon) => {  %>
+
+            <div>
+
+                <img src="<%= pokemon.img_url %>" alt="">
+                <h2>
+                    <%= pokemon.name %>
+                </h2>
+                <p>
+                    TYPE:
+                    <%= pokemon.type %>
+                </p>
+
+            </div>
+
+            <% }); %>
+
+    </section>
+
+</body>
+
+</html>
