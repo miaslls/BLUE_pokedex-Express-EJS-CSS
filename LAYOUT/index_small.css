@@ -38,7 +38,7 @@ div#gameboy {
     align-items: flex-start;
     justify-content: center;
     background: #D6DADE;
-    border-radius: 30px 30px 120px 30px;
+    border-radius: 30px 30px 35% 30px;
 }
 
 div#screenContainer {
@@ -154,4 +154,5 @@ div#btnHoverTip {
     text-align: center;
     font-family: finalsix, sans-serif;
     font-size: 12px;
+    font-weight: 700;
 }
