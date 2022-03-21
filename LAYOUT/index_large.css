@@ -1,8 +1,38 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
+    body {
+        flex-direction: row;
+        overflow: hidden;
+    }
+    /* 📌📌📌🚨 ----- GAMEBOY ----- */
     div#gameboyContainer {
         width: 50%;
+        height: 100vh;
+    }
+    div#instructions {
+        width: 70%;
+        height: 17.5%;
+        display: none;
     }
     div#gameboy {
-        width: 45%;
+        width: 42.5%;
+    }
+    /* 📌📌📌🚨 ----- MAIN ----- */
+    main#mainContainer {
+        width: 50%;
+    }
+    h1#pageTitle {
+        padding: 5%;
+        text-align: left;
+    }
+    nav#mainMenu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    button.menuItem {
+        transition: all 0.25s;
+    }
+    button.menuItem:hover {
+        transform: scale(1.25);
+        cursor: pointer;
     }
 }
