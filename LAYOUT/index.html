@@ -36,6 +36,7 @@
                         </div>
 
                         <span class="pokemonName">Bulbasaur</span>
+                        <span class="pokemonType">Grass / Poison</span>
 
                     </div>
 
@@ -106,9 +107,13 @@
 
     </div>
 
-    <main id="mainContainer">
+    <div id="mainContainer">
+
+        <div class="blackStripe" id="divider_titleTop"></div>
 
         <h1 id="pageTitle">BLUE-déx</h1>
+
+        <div class="blackStripe"></div>
 
         <nav id="mainMenu">
             <button class="menuItem" id="menu_instruction"> <span class="menuBullet">>></span> INSTRUCTIONS </button>
@@ -116,9 +121,35 @@
             <button class="menuItem" id="menu_cheatsheet"> <span class="menuBullet">>></span> CHEATSHEET </button>
         </nav>
 
-        <div class="blackStripe"></div>
+        <div class="blackStripe" id="divider_navBottom"></div>
 
-    </main>
+        <main id="mainContent">
+
+            <article id="newPokemon">
+
+                <h2 class="mainContentTitle">
+                    New Pokémon
+                </h2>
+
+                <form action="submit" id="newPokemonForm">
+
+                    <input class="formInput" type="text" name="name" placeholder="name">
+                    <input class="formInput" type="text" name="number" placeholder="number">
+                    <input class="formInput" type="text" name="type" placeholder="type">
+                    <input class="formInput" type="text" name="image" placeholder="image">
+                    <input class="formInput" type="text" name="description" placeholder="description">
+                    <input class="formInput" type="text" name="height" placeholder="height">
+                    <input class="formInput" type="text" name="weigth" placeholder="weigth">
+                    <input class="formInput" type="text" name="category" placeholder="category">
+                    <input class="formInput" type="text" name="ability" placeholder="ability">
+
+                </form>
+
+            </article>
+
+        </main>
+
+    </div>
 
 </body>
 
