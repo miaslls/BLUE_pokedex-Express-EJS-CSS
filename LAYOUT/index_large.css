@@ -41,17 +41,4 @@
     div#divider_navBottom {
         display: flex;
     }
-    form#newPokemonForm {
-        max-height: 40vh;
-    }
-    input.formInput {
-        width: 45%;
-        margin-top: 1rem;
-        padding: 0.5rem;
-        background: #D6DADE;
-        font-family: finalsix, sans-serif;
-        color: #000;
-        outline: none;
-        border-radius: 5px;
-    }
 }

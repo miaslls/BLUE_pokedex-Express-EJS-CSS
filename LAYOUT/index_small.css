@@ -275,27 +275,4 @@ div#divider_navBottom {
 main#mainContent {
     width: 100%;
     padding: 5%;
-    line-height: 1.5rem;
-}
-
-h2.mainContentTitle {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    font-weight: normal;
-}
-
-form#newPokemonForm {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-input.formInput {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background: #D6DADE;
-    font-family: finalsix, sans-serif;
-    color: #000;
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
 }
