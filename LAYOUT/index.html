@@ -25,7 +25,7 @@
 
                 <div id="screen">
 
-                    <div class="screenContent" id="1">
+                    <div class="screenContent fadeAnimation" id="screenContent01">
 
                         <span class="pokemonNumber">#001</span>
 
@@ -36,11 +36,11 @@
                         </div>
 
                         <span class="pokemonName">Bulbasaur</span>
-                        <span class="pokemonType">Grass / Poison</span>
+                        <span class="pokemonType">grass / poison</span>
 
                     </div>
 
-                    <!-- <div class="screenContent" id="screenContent02">
+                    <div class="screenContent fadeAnimation" id="screenContent02">
 
                         <span class="pokemonNumber">#004</span>
 
@@ -51,10 +51,11 @@
                         </div>
 
                         <span class="pokemonName">Charmander</span>
+                        <span class="pokemonType">fire</span>
 
                     </div>
 
-                    <div class="screenContent" id="screenContent03">
+                    <div class="screenContent fadeAnimation" id="screenContent03">
 
                         <span class="pokemonNumber">#007</span>
 
@@ -65,8 +66,10 @@
                         </div>
 
                         <span class="pokemonName">Squirtle</span>
+                        <span class="pokemonType">water</span>
 
-                    </div> -->
+
+                    </div>
 
                 </div>
             </div>
@@ -75,15 +78,15 @@
 
                 <div id="directionalContainer">
 
-                    <div id="topRow"></div>
-                    <div id="midRow">
+                    <div class="topRow directionalBtn" id="directionalBtn_up">5</div>
+                    <div class="midRow">
 
-                        <div id="midRow_leftCol"></div>
-                        <div id="midRow_midCol"></div>
-                        <div id="midRow_rightCol"></div>
+                        <div class="midRow_leftCol directionalBtn" id="directionalBtn_left">U</div>
+                        <div class="midRow_midCol"></div>
+                        <div class="midRow_rightCol directionalBtn" id="directionalBtn_right">V</div>
 
                     </div>
-                    <div id="bottomRow"></div>
+                    <div class="bottomRow directionalBtn" id="directionalBtn_down">?</div>
 
                 </div>
 
@@ -96,7 +99,7 @@
 
             </div>
 
-            <div id="btnHoverTip">HOVER TIP</div>
+            <div id="btnHoverTip"></div>
 
         </div>
 
@@ -128,6 +131,8 @@
         </main>
 
     </div>
+
+    <script src="./layout_script.js"></script>
 
 </body>
 
