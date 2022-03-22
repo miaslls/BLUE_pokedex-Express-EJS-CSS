@@ -127,6 +127,7 @@ span.pokemonName,
     width: 90%;
     height: 12px;
     text-align: center;
+    text-transform: capitalize;
     overflow: hidden;
 }
 
