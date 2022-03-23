@@ -9,6 +9,8 @@ const directionalBtn_down = document.getElementById('directionalBtn_down');
 
 let btnHoverTip = document.getElementById('btnHoverTip');
 
+// 👁‍🗨 refactor using FOR ... OF
+
 directionalBtn_up.addEventListener('mouseenter', () => {
     btnHoverTip.innerText = 'condense';
 });
@@ -98,7 +100,5 @@ function showSlides(n) {
     for (let slide of slides) {
         slide.style.display = "none";
     }
-    slides[slideIndex - 1].style.display = "flex";
+    slides[slideIndex - 1].style.display = "block";
 }
-
-// 📌 EXTEND / CONDENSE Pokémon Screen

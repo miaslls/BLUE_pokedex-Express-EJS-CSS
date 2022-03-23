@@ -6,12 +6,15 @@ font-style: normal;
 
 + 💡 ADD background-color options
 
-Nome;  
 Número;  
-Tipo;  
+
+Nome;  
 Categoria;  
-Descrição;  
 Altura;  
 Peso;  
+
+Descrição;  
+
+Tipo;  
 Habilidade;  
 Imagem;  

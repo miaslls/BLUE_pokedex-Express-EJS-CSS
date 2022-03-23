@@ -18,9 +18,6 @@
     div.roundBtn:hover {
         cursor: pointer;
     }
-    div#instructions {
-        display: none;
-    }
     /* 📌📌📌🚨 ----- MAIN ----- */
     div#divider_titleTop {
         display: none;
@@ -36,11 +33,9 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    button.menuItem {
-        transition: all 0.25s;
-    }
     button.menuItem:hover {
-        transform: scaley(1.5);
+        background: #E3350D;
+        color: #fff;
         cursor: pointer;
     }
     div#divider_navBottom {
