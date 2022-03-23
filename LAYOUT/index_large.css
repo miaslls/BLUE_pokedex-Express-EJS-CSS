@@ -10,6 +10,7 @@
     }
     div#gameboy {
         width: 42.5%;
+        max-height: 90vh;
     }
     div.directionalBtn:hover {
         color: #fff;

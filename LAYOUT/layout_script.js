@@ -1,6 +1,12 @@
 'use strict';
 
-// 📌 DIRECTIONAL BUTTONS
+// 📌 focus current menu page 🚨 LOCAL - one for each view
+
+window.onload = function() {
+    document.getElementById('menu_instructions').focus();
+}
+
+// 📌 DIRECTIONAL BUTTONS 🚨 GLOBAL
 
 const directionalBtn_up = document.getElementById('directionalBtn_up');
 const directionalBtn_left = document.getElementById('directionalBtn_left');
@@ -12,7 +18,7 @@ let btnHoverTip = document.getElementById('btnHoverTip');
 // 👁‍🗨 refactor using FOR ... OF
 
 directionalBtn_up.addEventListener('mouseenter', () => {
-    btnHoverTip.innerText = 'condense';
+    btnHoverTip.innerText = 'colapse';
 });
 
 directionalBtn_left.addEventListener('mouseenter', () => {
@@ -43,7 +49,7 @@ directionalBtn_down.addEventListener('mouseleave', () => {
     btnHoverTip.innerText = '';
 });
 
-// 📌 A B BUTTONS
+// 📌 A B BUTTONS 🚨 GLOBAL
 
 let btnA = document.getElementById('btnA');
 let btnB = document.getElementById('btnB');
@@ -72,7 +78,7 @@ btnB.addEventListener('mouseleave', () => {
     btnB.innerText = 'B';
 });
 
-// 📌 SLIDESHOW
+// 📌 SLIDESHOW 🚨 GLOBAL
 
 let slideIndex = 1;
 let slides = document.getElementsByClassName("screenContent");
@@ -100,5 +106,23 @@ function showSlides(n) {
     for (let slide of slides) {
         slide.style.display = "none";
     }
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "flex";
 }
+
+// 📌 EXPAND / CONDENSE GAMEBOY CONTAINER
+
+let gameboyContainer = document.getElementById('gameboyContainer');
+let mainContainer = document.getElementById('mainContainer');
+
+directionalBtn_down.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+    mainContainer.setAttribute('class', 'colapsed');
+    gameboyContainer.setAttribute('class', 'gameboyContainer expanded');
+});
+
+directionalBtn_up.addEventListener('click', () => {
+
+    gameboyContainer.setAttribute('class', 'gameboyContainer');
+    mainContainer.removeAttribute('class');
+
+});
