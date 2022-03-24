@@ -30,7 +30,7 @@
     1. Número;
     2. Nome;
     3. Tipo;
-    4. Imagem;
+    4. Imagem; 
     5. Descrição;
     6. Altura;
     7. Peso;
@@ -38,5 +38,5 @@
     9. Habilidade;
 
 + Ao renderizar a view index.ejs, envie esse array como variável; ✔
-+ Estilize toda a view index.ejs para receber os dados do array, porém só adicione o nome, imagem e tipo do pokemon. Reserve os outros dados para a rota detalhes.
++ Estilize toda a view index.ejs para receber os dados do array, porém só adicione o nome, imagem e tipo do pokemon. Reserve os outros dados para a rota detalhes. ✔
 + Crie um menu para navegar entre as rotas; ✔

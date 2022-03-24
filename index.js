@@ -1,3 +1,5 @@
+'use strict'
+
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -16,19 +18,17 @@ const pokedex = [{
         description: 'There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.',
         type: 'Grass/Poison',
         abilities: 'Overgrow',
-        img: 'img/pokemon_gifs/001.gif'
     },
     {
         id: 2,
         number: '002',
-        name: 'IVYSAUR',
+        name: 'Ivysaur',
         category: 'Seed',
         height: `3' 03"`,
         weigth: '28.7lbs',
         description: 'When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.',
         type: 'Grass/Poison',
         abilities: 'Overgrow',
-        img: 'img/pokemon_gifs/002.gif'
     }, {
         id: 3,
         number: '003',
@@ -39,14 +39,23 @@ const pokedex = [{
         description: 'Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.',
         type: 'Grass/Poison',
         abilities: 'Overgrow',
-        img: 'img/pokemon_gifs/003.gif'
     }
 ];
+
+for (let pokemon of pokedex) {
+    pokemon.bg_img = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.number}.png`;
+    pokemon.img = `https://img.pokemondb.net/sprites/black-white/anim/normal/${pokemon.name.toLowerCase()}.gif`;
+}
+
 
 // 🚨📌📌📌 ----- ROTAS -----
 
 app.get('/', (req, res) => {
     res.render('index', { pokedex });
+});
+
+app.get('/details', (req, res) => {
+    res.render('details', { pokedex });
 });
 
 app.listen(port, () => console.log(`Server running at http://localhost:${port}`));

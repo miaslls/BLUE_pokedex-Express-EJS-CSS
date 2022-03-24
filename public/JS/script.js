@@ -1,6 +1,16 @@
 'use strict';
 
-// 📌 DIRECTIONAL BUTTONS 🚨 GLOBAL
+const mainContent = document.getElementById('mainContent');
+
+mainContent.style.opacity = '0';
+
+window.onload = () => {
+    mainContent.style.opacity = '1';
+}
+
+setTimeout(() => { mainContent.style.opacity = '1'; }, 500);
+
+// 📌 DIRECTIONAL BUTTONS 
 
 const directionalBtn_up = document.getElementById('directionalBtn_up');
 const directionalBtn_left = document.getElementById('directionalBtn_left');
@@ -43,10 +53,10 @@ directionalBtn_down.addEventListener('mouseleave', () => {
     btnHoverTip.innerText = '';
 });
 
-// 📌 A B BUTTONS 🚨 GLOBAL
+// 📌 A B BUTTONS 
 
-let btnA = document.getElementById('btnA');
-let btnB = document.getElementById('btnB');
+const btnA = document.getElementById('btnA');
+const btnB = document.getElementById('btnB');
 
 btnA.addEventListener('mouseenter', () => {
     btnHoverTip.innerText = 'edit';
@@ -72,10 +82,10 @@ btnB.addEventListener('mouseleave', () => {
     btnB.innerText = 'B';
 });
 
-// 📌 SLIDESHOW 🚨 GLOBAL
+// 📌 SLIDESHOW 
 
 let slideIndex = 1;
-let slides = document.getElementsByClassName("screenContent");
+const slides = document.getElementsByClassName("screenContent");
 showSlides(slideIndex);
 
 directionalBtn_left.addEventListener('click', () => {
@@ -105,9 +115,9 @@ function showSlides(n) {
 
 // 📌 EXPAND / CONDENSE GAMEBOY CONTAINER
 
-let gameboyContainer = document.getElementById('gameboyContainer');
-let mainContainer = document.getElementById('mainContainer');
-let mainContainer_innerContent = document.getElementsByClassName('mainContainer_innerContent');
+const gameboyContainer = document.getElementById('gameboyContainer');
+const mainContainer = document.getElementById('mainContainer');
+const mainContainer_innerContent = document.getElementsByClassName('mainContainer_innerContent');
 
 directionalBtn_up.addEventListener('click', () => {
 

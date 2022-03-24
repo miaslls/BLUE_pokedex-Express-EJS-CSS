@@ -1,0 +1,98 @@
+<div id="gameboyContainer">
+
+    <div id="gameboy">
+
+        <div id="screenContainer">
+
+            <div id="screen">
+
+                <% pokedex.forEach((pokemon) => {  %>
+
+                    <div class="screenContent">
+
+                        <div class="pokemonSummary">
+
+                            <div class="screenImgContainer">
+                                <img src="<%= pokemon.img %>" class="pokemonImg">
+                                <span class="pokemonNumber">#<%= pokemon.number %></span>
+                            </div>
+
+                            <div class="pokemonSummaryInfo">
+                                <p class="pokemonName">
+                                    <%= pokemon.name %>
+                                </p>
+                                <p class="pokemonCategory">
+                                    <%= pokemon.category %>
+                                </p>
+                                <p class="pokemonHeight">
+                                    <%= pokemon.height %>
+                                </p>
+                                <p class="pokemonWeigth">
+                                    <%= pokemon.weigth %>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="screenContentDivider">
+                            <div class="dividerLine"></div>
+                            <div class="squareThingies">
+                                <img src="img/square_thingy.png">
+                                <img src="img/square_thingy.png">
+                                <img src="img/square_thingy.png">
+                                <img src="img/square_thingy.png">
+                            </div>
+                        </div>
+
+                        <p class="pokemonExtraInfo pokemonType">TYPE:
+                            <%= pokemon.type %>
+                        </p>
+                        <p class="pokemonExtraInfo pokemonAbilities">ABILITIES:
+                            <%= pokemon.abilities %>
+                        </p>
+
+                        <p class="pokemonExtraInfo pokemonDescription">
+                            <%= pokemon.description %>
+                        </p>
+
+                    </div>
+
+                    <% }); %>
+
+                        <div id="arrowContainer">
+                            <img src="img/arrow_down.png">
+                        </div>
+
+            </div>
+        </div>
+
+        <div id="controlsContainer">
+
+            <div id="directionalContainer">
+
+                <div class="topRow directionalBtn" id="directionalBtn_up">?</div>
+                <div class="midRow">
+
+                    <div class="midRow_leftCol directionalBtn" id="directionalBtn_left">U</div>
+                    <div class="midRow_midCol"></div>
+                    <div class="midRow_rightCol directionalBtn" id="directionalBtn_right">V</div>
+
+                </div>
+                <div class="bottomRow directionalBtn" id="directionalBtn_down">5</div>
+
+            </div>
+
+            <div id="btnABContainer">
+
+                <div class="roundBtn" id="btnB">B</div>
+                <div class="roundBtn" id="btnA">A</div>
+
+            </div>
+
+        </div>
+
+        <div id="btnHoverTip"></div>
+
+    </div>
+
+</div>

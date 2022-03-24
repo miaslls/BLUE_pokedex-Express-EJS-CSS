@@ -2,397 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="CSS/index_small.css">
-    <link rel="stylesheet" href="CSS/index_large.css">
-    <link rel="icon" href="img/favicon.png">
+    <%- include( 'partials/head'); %>
 
-    <title>BLUE-dex</title>
+        <title>BLUE-dex</title>
 </head>
 
 <body>
 
-    <div id="gameboyContainer">
+    <%- include('partials/gameboy'); %>
 
-        <div id="gameboy">
+        <div id="mainContainer">
 
-            <div id="screenContainer">
+            <%- include('partials/title+nav'); %>
 
-                <div id="screen">
+                <main class="mainContainer_outerContent" id="mainContent">
 
-                    <% pokedex.forEach((pokemon) => {  %>
+                    <div class="mainContainer_innerContent">
 
-                        <div class="screenContent">
+                        <section id="pokemonCards_all">
 
-                            <div class="pokemonSummary">
+                            <% pokedex.forEach((pokemon) => {  %>
 
-                                <div class="screenImgContainer">
-                                    <img src="<%= pokemon.img %>" class="pokemonImg">
-                                    <span class="pokemonNumber">#<%= pokemon.number %></span>
+                                <div class="pokemonCardContainer">
+
+                                    <div class="pokemonCardBox" id="<%= pokemon.name %>" style="background-image: url('<%= pokemon.bg_img %>')">
+
+                                        <div class="pokeballContainer">
+
+                                            <img src="img/pokeball.png" alt="">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="mainPokemonSummary">
+
+                                        <p>#
+                                            <%= pokemon.number %>
+                                                </span>
+                                        </p>
+                                        <p>
+                                            <%= pokemon.name.toUpperCase() %>
+                                        </p>
+                                        <p>
+                                            <%= pokemon.type %>
+                                        </p>
+
+                                    </div>
                                 </div>
 
-                                <div class="pokemonSummaryInfo">
-                                    <p class="pokemonName">
-                                        <%= pokemon.name %>
-                                    </p>
-                                    <p class="pokemonCategory">
-                                        <%= pokemon.category %>
-                                    </p>
-                                    <p class="pokemonHeight">
-                                        <%= pokemon.height %>
-                                    </p>
-                                    <p class="pokemonWeigth">
-                                        <%= pokemon.weigth %>
-                                    </p>
-                                </div>
+                                <% }); %>
 
-                            </div>
 
-                            <div class="screenContentDivider">
-                                <div class="dividerLine"></div>
-                                <div class="squareThingies">
-                                    <img src="img/square_thingy.png">
-                                    <img src="img/square_thingy.png">
-                                    <img src="img/square_thingy.png">
-                                    <img src="img/square_thingy.png">
-                                </div>
-                            </div>
-
-                            <p class="pokemonExtraInfo pokemonType">TYPE:
-                                <%= pokemon.type %>
-                            </p>
-                            <p class="pokemonExtraInfo pokemonAbilities">ABILITIES:
-                                <%= pokemon.abilities %>
-                            </p>
-
-                            <p class="pokemonExtraInfo pokemonDescription">
-                                <%= pokemon.description %>
-                            </p>
-
-                        </div>
-
-                        <% }); %>
-
-                            <div id="arrowContainer">
-                                <img src="img/arrow_down.png">
-                            </div>
-
-                </div>
-            </div>
-
-            <div id="controlsContainer">
-
-                <div id="directionalContainer">
-
-                    <div class="topRow directionalBtn" id="directionalBtn_up">?</div>
-                    <div class="midRow">
-
-                        <div class="midRow_leftCol directionalBtn" id="directionalBtn_left">U</div>
-                        <div class="midRow_midCol"></div>
-                        <div class="midRow_rightCol directionalBtn" id="directionalBtn_right">V</div>
-
+                        </section>
                     </div>
-                    <div class="bottomRow directionalBtn" id="directionalBtn_down">5</div>
-
-                </div>
-
-                <div id="btnABContainer">
-
-                    <div class="roundBtn" id="btnB">B</div>
-                    <div class="roundBtn" id="btnA">A</div>
-
-                </div>
-
-            </div>
-
-            <div id="btnHoverTip"></div>
-
+                </main>
         </div>
 
-    </div>
-
-    <div id="mainContainer">
-
-        <div class="blackStripe" id="divider_titleTop"></div>
-
-        <div class="mainContainer_outerContent" id="pageTitle">
-            <h1 class="mainContainer_innerContent">BLUE-déx</h1>
-        </div>
-
-        <div class="blackStripe"></div>
-
-        <nav class="mainContainer_outerContent" id="mainMenu">
-            <div class="mainContainer_innerContent" id="mainMenu_innerContent">
-                <button class="menuItem" id="menu_instructions"> <span class="menuBullet">>></span> INSTRUCTIONS </button>
-                <button class="menuItem" id="menu_new"> <span class="menuBullet">>></span> NEW Pokémon </button>
-                <button class="menuItem focused" id="menu_all"> <span class="menuBullet">>></span> ALL Pokémon </button>
-            </div>
-        </nav>
-
-        <div class="blackStripe" id="divider_navBottom"></div>
-
-        <main class="mainContainer_outerContent" id="mainContent">
-
-            <div class="mainContainer_innerContent">
-
-                <section id="pokemonCards_all">
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                    <div class="pokemonCardContainer">
-
-                        <div class="pokemonCardBox">
-
-                            <div class="pokeballContainer">
-
-                                <img src="img/pokeball.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="mainPokemonSummary">
-
-                            <p>#004</p>
-                            <p>Venusaur</p>
-
-                        </div>
-                    </div>
-
-                </section>
-            </div>
-        </main>
-    </div>
-
-    <script src="JS/script.js"></script>
+        <script src="JS/script.js"></script>
+        <script src="JS/index_script.js"></script>
 
 </body>
 
