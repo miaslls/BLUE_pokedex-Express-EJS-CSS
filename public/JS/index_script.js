@@ -18,7 +18,7 @@ for (let card of pokemonCards) {
 
         mainContent.style.opacity = '0';
 
-        setTimeout(() => { window.location.href = '/details'; }, 500);
+        setTimeout(() => { window.location.href = `/details/${card.id}`; }, 500);
 
 
 

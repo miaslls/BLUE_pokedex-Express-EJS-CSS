@@ -55,8 +55,10 @@ app.get('/', (req, res) => {
     res.render('index', { pokedex });
 });
 
-app.get('/details', (req, res) => {
-    res.render('details', { pokedex });
+app.get('/details/:id', (req, res) => {
+    const index = req.params.id;
+    const pokemonById = pokedex[index - 1];
+    res.render('details', { pokedex, selectedPokemon: pokemonById });
 });
 
 app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
