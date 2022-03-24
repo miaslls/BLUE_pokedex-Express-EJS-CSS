@@ -6,6 +6,8 @@ font-style: normal;
 
 + 💡 ADD background-color options
 
++ 👁‍🗨 TRANSFORM NAV to LI
+
 Número;  
 
 Nome;  
