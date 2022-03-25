@@ -25,6 +25,11 @@ body {
     overflow-x: hidden;
 }
 
+a#home {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 /* 📌📌📌🚨 ----- GAMEBOY -----*/
 
