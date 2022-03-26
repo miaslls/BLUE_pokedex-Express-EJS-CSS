@@ -5,6 +5,8 @@
 
     <%- include( 'partials/head'); %>
 
+        <link rel="stylesheet" href="/CSS/index.css">
+
         <title>BLUE-dex</title>
 </head>
 
@@ -26,9 +28,8 @@
 
                                 <div class="pokemonCardContainer">
 
-                                    <div class="pokemonCardBox" id="<%= pokemon.id %>" style="background-image: url('<%= pokemon.bg_img %>')">
+                                    <div class="pokemonCardBox" id="<%= pokemon.id %>" style="background-image: url('<%= pokemon.png %>')">
 
-                                        <!-- href -->
                                         <div class="pokeballContainer">
 
                                             <img src="img/pokeball.png" alt="">
@@ -40,7 +41,6 @@
 
                                         <p>#
                                             <%= pokemon.number %>
-                                                </span>
                                         </p>
                                         <p>
                                             <%= pokemon.name.toUpperCase() %>

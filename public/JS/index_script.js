@@ -20,8 +20,6 @@ for (let card of pokemonCards) {
 
         setTimeout(() => { window.location.href = `/details/${card.id}`; }, 500);
 
-
-
     });
 
 }

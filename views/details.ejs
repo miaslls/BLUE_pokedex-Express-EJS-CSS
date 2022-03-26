@@ -5,6 +5,8 @@
 
     <%- include( 'partials/head'); %>
 
+        <link rel="stylesheet" href="/CSS/details.css">
+
         <title>BLUE-dex</title>
 </head>
 
@@ -20,27 +22,77 @@
 
                     <div class="mainContainer_innerContent">
 
-                        <section id="pokemonDetails">
+                        <section class="chosenPokemonDetails">
 
-                            <div class="mainPokemonSummary">
+                            <div class="detailBox">
 
-                                <p>#
-                                    <%=selectedPokemon.number %>
-                                        </span>
-                                </p>
-                                <p>
-                                    <%= selectedPokemon.name.toUpperCase() %>
-                                </p>
-                                <p>
-                                    <%= selectedPokemon.type %>
-                                </p>
+                                <div class="detailBox_inner">
+
+                                    <div class="top">
+
+                                        <div class="topImg">
+                                            <img src="<%= chosenPokemon.png %>" alt="<%= chosenPokemon.name %>">
+                                        </div>
+
+                                        <div class="topInfo">
+
+                                            <div class="info_nameType">
+                                                <p class="number">
+                                                    #
+                                                    <%= chosenPokemon.number %>
+                                                </p>
+                                                <h2 class="name">
+                                                    <%= chosenPokemon.name.toUpperCase() %>
+                                                </h2>
+                                                <p class="type">
+                                                    <%= chosenPokemon.type %>
+                                                </p>
+                                            </div>
+
+                                            <div class="info_heightWeigth">
+                                                <p class="height">
+                                                    HT:
+                                                    <%= chosenPokemon.height %>
+                                                </p>
+                                                <p class="weigth">
+                                                    WT:
+                                                    <%= chosenPokemon.weigth %>
+                                                </p>
+                                            </div>
+                                            <div class="info_category">
+                                                <p class="categoryLabel">
+                                                    CATEGORY:
+                                                    <p class="category">
+                                                    </p>
+                                                    <%= chosenPokemon.category %>
+                                                </p>
+                                            </div>
+                                            <div class="info_abilities">
+
+                                                <p class="abilitiesLabel">
+                                                    ABILITIES:
+                                                    <p class="abilities">
+                                                    </p>
+                                                    <%= chosenPokemon.abilities %>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <%= chosenPokemon.description %>
+                                    </div>
+
+                                </div>
 
                             </div>
 
-                        </section>
-
                     </div>
-                </main>
+
+                    </section>
+
+        </div>
+        </main>
         </div>
 
         <script src="/JS/script.js"></script>

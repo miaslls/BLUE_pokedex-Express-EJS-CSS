@@ -361,7 +361,6 @@ div#mainMenu_innerContent {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-self: flex-start;
 }
 
 button.menuItem {
@@ -377,59 +376,4 @@ button.focused {
     background: #000;
     color: #fff;
     outline: none;
-}
-
-main#mainContent {
-    width: 100%;
-    height: 50%;
-    padding: 5%;
-    overflow: auto;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-section#pokemonCards_all {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-}
-
-div.pokemonCardContainer {
-    width: 40%;
-}
-
-div.pokemonCardBox {
-    width: 100%;
-    aspect-ratio: 1;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.35);
-    background-size: 130%;
-    background-position: 10% 30%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.05);
-}
-
-div.pokeballContainer {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-div.pokeballContainer:hover {
-    cursor: pointer;
-    opacity: 0.9;
-}
-
-div.pokeballContainer img {
-    max-width: 100%;
-}
-
-div.mainPokemonSummary {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }

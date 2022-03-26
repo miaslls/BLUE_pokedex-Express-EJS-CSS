@@ -44,8 +44,8 @@ const pokedex = [{
 ];
 
 for (let pokemon of pokedex) {
-    pokemon.bg_img = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.number}.png`;
-    pokemon.img = `https://img.pokemondb.net/sprites/black-white/anim/normal/${pokemon.name.toLowerCase()}.gif`;
+    pokemon.png = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.number}.png`;
+    pokemon.gif = `https://img.pokemondb.net/sprites/black-white/anim/normal/${pokemon.name.toLowerCase()}.gif`;
 }
 
 
@@ -58,7 +58,7 @@ app.get('/', (req, res) => {
 app.get('/details/:id', (req, res) => {
     const index = req.params.id;
     const pokemonById = pokedex[index - 1];
-    res.render('details', { pokedex, selectedPokemon: pokemonById });
+    res.render('details', { pokedex, chosenPokemon: pokemonById });
 });
 
 app.listen(port, () => console.log(`Server running at http://localhost:${port}`));

@@ -1,0 +1,64 @@
+section.chosenPokemonDetails {
+    width: 100%;
+    margin-top: 1rem;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+div.detailBox {
+    max-width: 90%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+div.detailBox_inner {
+    display: flex;
+    flex-direction: column;
+    background: #89a10059;
+}
+
+div.top {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.topImg {
+    max-width: 100%;
+}
+
+div.topInfo {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.categoryLabel,
+.abilitiesLabel {
+    margin-bottom: 0.25rem;
+}
+
+div.bottom {
+    padding: 0 2rem 2rem 2rem;
+    line-height: 1.25rem;
+}
+
+@media screen and (min-width: 700px) {
+    div.detailBox {
+        width: 65%;
+    }
+    div.top {
+        padding: 0 2rem 0 0;
+        gap: 2rem;
+    }
+    div.topInfo {
+        padding: 1rem 0 2rem 0;
+    }
+}

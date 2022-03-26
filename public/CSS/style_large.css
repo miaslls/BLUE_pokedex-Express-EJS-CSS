@@ -38,7 +38,12 @@
     div#divider_navBottom {
         display: flex;
     }
-    div.pokemonCardContainer {
-        width: 20%;
+    main#mainContent {
+        width: 100%;
+        height: 50%;
+        padding: 5%;
+        overflow: auto;
+        opacity: 0;
+        transition: opacity 0.5s;
     }
 }
