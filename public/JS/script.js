@@ -53,21 +53,21 @@ directionalBtn_down.addEventListener('mouseleave', () => {
     btnHoverTip.innerText = '';
 });
 
-// 📌 A B BUTTONS 
+// 📌 A B BUTTONS HOVER
 
 const btnA = document.getElementById('btnA');
 const btnB = document.getElementById('btnB');
 
 btnA.addEventListener('mouseenter', () => {
-    btnHoverTip.innerText = 'edit';
+    btnHoverTip.innerText = 'ADD Pokémon';
     btnA.style.fontFamily = 'Dripicons';
-    btnA.innerText = '';
+    btnA.innerText = '';
 });
 
 btnB.addEventListener('mouseenter', () => {
-    btnHoverTip.innerText = 'delete';
+    btnHoverTip.innerText = 'view details';
     btnB.style.fontFamily = 'Dripicons';
-    btnB.innerText = '';
+    btnB.innerText = '';
 });
 
 btnA.addEventListener('mouseleave', () => {
@@ -141,4 +141,43 @@ directionalBtn_down.addEventListener('click', () => {
 
     }, 300);
 
+});
+
+// 📌 MENU
+
+const menuItems = document.getElementsByClassName('menuItem');
+
+for (let item of menuItems) {
+    item.addEventListener('click', () => {
+        mainContent.style.opacity = '0';
+
+        setTimeout(() => {
+
+            switch (item.id) {
+                case 'menu_all':
+                    window.location.href = '/';
+                    break;
+                case 'menu_new':
+                    window.location.href = '/register';
+                    break;
+                case 'menu_info':
+                    window.location.href = '/info';
+                    break;
+            }
+        }, 500);
+    })
+}
+
+// 📌 AB BUTTONS REDIRECT
+
+btnA.addEventListener('click', () => {
+    mainContent.style.opacity = '0';
+
+    setTimeout(() => { window.location.href = `/register`; }, 500);
+});
+
+btnB.addEventListener('click', () => {
+    mainContent.style.opacity = '0';
+
+    setTimeout(() => { window.location.href = `/details/${slideIndex}`; }, 500);
 });

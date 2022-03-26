@@ -55,6 +55,10 @@ app.get('/', (req, res) => {
     res.render('index', { pokedex });
 });
 
+app.get('/register', (req, res) => {
+    res.render('register', { pokedex });
+});
+
 app.get('/details/:id', (req, res) => {
     const index = req.params.id;
     const pokemonById = pokedex[index - 1];

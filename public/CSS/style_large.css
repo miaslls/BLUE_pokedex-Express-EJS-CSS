@@ -1,18 +1,4 @@
 @media screen and (min-width: 700px) {
-    /* 📌📌📌🚨 ----- GAMEBOY ----- */
-    div#gameboyContainer {
-        width: 35%;
-        height: 100vh;
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    div#gameboy {
-        width: 60%;
-        max-height: 90vh;
-    }
-    /* 📌📌📌🚨 ----- MAIN ----- */
     div#mainContainer {
         width: 65%;
         position: absolute;
@@ -20,28 +6,10 @@
         right: 0;
         transition: all 0.5s ease;
     }
-    h1 {
-        padding: 5% 7.5%;
-    }
-    nav#mainMenu {
-        padding: 2% 10%;
-    }
-    div#mainMenu_innerContent {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    button.menuItem:hover {
-        background: #E3350D;
-        color: #fff;
-        cursor: pointer;
-    }
-    div#divider_navBottom {
-        display: flex;
-    }
     main#mainContent {
         width: 100%;
         height: 50%;
-        padding: 5%;
+        padding: 2rem;
         overflow: auto;
         opacity: 0;
         transition: opacity 0.5s;

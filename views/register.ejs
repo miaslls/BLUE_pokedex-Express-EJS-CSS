@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include( 'partials/head'); %>
+
+        <link rel="stylesheet" href="/CSS/register.css">
+
+        <title>BLUE-dex</title>
+</head>
+
+<body>
+
+    <%- include('partials/gameboy'); %>
+
+        <div id="mainContainer">
+
+            <%- include('partials/title+nav'); %>
+
+                <main class="mainContainer_outerContent" id="mainContent">
+
+                    <div class="mainContainer_innerContent">
+
+
+                        <section id="newPokemonBox">
+
+                            <div id="validationContainer">
+
+                                <div class="validation" id="validate_name">
+
+                                    <span class="bullet" id="number">9</span> invalid NAME
+
+                                </div>
+
+                                <div class="validation" id="validate_number">
+
+                                    <span class="bullet" id="number">9</span> invalid NUMBER
+
+                                </div>
+
+                                <div class="validation" id="validate_name-number">
+
+                                    <span class="bullet" id="number">9</span> NAME and NUMBER don't match
+
+                                </div>
+
+                            </div>
+
+                            <form action="submit" method="POST" id="newPokemonForm">
+
+                                <input type="text" name="number" id="number" placeholder="number">
+                                <input type="text" name="name" id="name" placeholder="name">
+                                <input type="text" name="type" id="type" placeholder="type">
+                                <input type="text" name="description" id="description" placeholder="description">
+                                <input type="text" name="height" id="height" placeholder="height">
+                                <input type="text" name="weigth" id="weigth" placeholder="weigth">
+                                <input type="text" name="category" id="category" placeholder="category">
+                                <input type="text" name="abilities" id="abilities" placeholder="abilities">
+
+                                <button id="addPokemonBtn">
+                                    add NEW
+                                    <img id="buttonImg" src="/img/pokeball-8bit.png">
+                                    Pokémon</button>
+                            </form>
+
+                        </section>
+
+
+                    </div>
+                </main>
+        </div>
+
+        <script src="/JS/script.js"></script>
+
+</body>
+
+</html>

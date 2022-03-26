@@ -12,7 +12,6 @@ const pokemonCards = document.getElementsByClassName('pokemonCardBox');
 
 for (let card of pokemonCards) {
 
-    console.log(card.id); // FIXME:
 
     card.addEventListener('click', () => {
 

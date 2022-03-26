@@ -1,0 +1,64 @@
+div.blackStripe {
+    width: 100%;
+    height: 0.5rem;
+    background: #000;
+}
+
+div#pageTitle {
+    background: #E3350D;
+}
+
+h1 {
+    width: 100%;
+    height: 100%;
+    padding: 7.5%;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+nav#mainMenu {
+    padding: 2%;
+    background: #fff;
+    align-items: flex-start;
+}
+
+div#mainMenu_innerContent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+button.menuItem {
+    width: fit-content;
+    padding: 1%;
+    background: none;
+    font-family: 'Pokemon GB', sans-serif;
+    font-size: 0.75rem;
+    color: #000;
+}
+
+button.focused {
+    background: #000;
+    color: #fff;
+    outline: none;
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        padding: 5% 7.5%;
+    }
+    nav#mainMenu {
+        padding: 2% 10%;
+    }
+    div#mainMenu_innerContent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    button.menuItem:hover {
+        background: #E3350D;
+        color: #fff;
+        cursor: pointer;
+    }
+}
