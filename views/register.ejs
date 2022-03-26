@@ -47,7 +47,7 @@
 
                             </div>
 
-                            <form action="submit" method="POST" id="newPokemonForm">
+                            <form action="/add" method="POST" id="newPokemonForm">
 
                                 <input type="text" name="number" id="number" placeholder="number">
                                 <input type="text" name="name" id="name" placeholder="name">
@@ -58,7 +58,7 @@
                                 <input type="text" name="category" id="category" placeholder="category">
                                 <input type="text" name="abilities" id="abilities" placeholder="abilities">
 
-                                <button id="addPokemonBtn">
+                                <button id="addPokemonBtn" type="submit">
                                     add NEW
                                     <img id="buttonImg" src="/img/pokeball-8bit.png">
                                     Pokémon</button>
@@ -72,6 +72,7 @@
         </div>
 
         <script src="/JS/script.js"></script>
+        <script src="/JS/register_script.js"></script>
 
 </body>
 

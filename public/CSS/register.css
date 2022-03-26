@@ -51,6 +51,19 @@ form#newPokemonForm input {
     font-size: 12px;
     font-weight: thin;
     text-transform: uppercase;
+    outline: none;
+}
+
+form#newPokemonForm input::-webkit-input-placeholder {
+    color: #c6c6c6;
+}
+
+form#newPokemonForm input:-ms-input-placeholder {
+    color: #c6c6c6;
+}
+
+form#newPokemonForm input::placeholder {
+    color: #c6c6c6;
 }
 
 button#addPokemonBtn {
@@ -66,6 +79,7 @@ button#addPokemonBtn {
     font-size: 1rem;
     color: #000;
     opacity: 0.3;
+    cursor: not-allowed;
 }
 
 .animation {
