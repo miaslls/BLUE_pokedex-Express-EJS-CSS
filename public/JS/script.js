@@ -17,8 +17,6 @@ const directionalBtn_down = document.getElementById('directionalBtn_down');
 
 let btnHoverTip = document.getElementById('btnHoverTip');
 
-// 👁‍🗨 refactor using FOR ... OF
-
 directionalBtn_up.addEventListener('mouseenter', () => {
     btnHoverTip.innerText = 'expand';
 });
@@ -157,9 +155,6 @@ for (let item of menuItems) {
                     break;
                 case 'menu_new':
                     window.location.href = '/register';
-                    break;
-                case 'menu_info':
-                    window.location.href = '/info'; // 👁‍🗨 INFO SCREEN
                     break;
             }
         }, 500);
