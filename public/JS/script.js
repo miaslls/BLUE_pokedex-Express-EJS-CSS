@@ -4,9 +4,7 @@ const mainContent = document.getElementById('mainContent');
 
 mainContent.style.opacity = '0';
 
-window.onload = () => {
-    mainContent.style.opacity = '1';
-}
+window.onload = () => { mainContent.style.opacity = '1'; }
 
 setTimeout(() => { mainContent.style.opacity = '1'; }, 500);
 

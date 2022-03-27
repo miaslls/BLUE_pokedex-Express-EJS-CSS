@@ -4,7 +4,7 @@ div#gameboyContainer {
 
 @media screen and (min-width: 700px) {
     div#gameboyContainer {
-        width: 35%;
+        width: 35vw;
         height: 100vh;
         padding: 3rem 0 3rem 0;
         display: flex;

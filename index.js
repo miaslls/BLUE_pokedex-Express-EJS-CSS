@@ -52,10 +52,14 @@ const pokedex = [{
     }
 ];
 
+let confirmationMessage = 'no message';
+
 // 🚨📌📌📌 ----- ROTAS -----
 
 app.get('/', (req, res) => {
-    res.render('index', { pokedex });
+
+    res.render('index', { pokedex, confirmationMessage });
+    confirmationMessage = 'no message';
 });
 
 app.get('/details/:id', (req, res) => {
