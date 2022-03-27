@@ -36,7 +36,7 @@ const pokedex = [{
         type: 'Grass/Poison',
         abilities: 'Overgrow',
         png: `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png`,
-        gif: `https://img.pokemondb.net/sprites/black-white/anim/normal/ivysaur}.gif`,
+        gif: `https://img.pokemondb.net/sprites/black-white/anim/normal/ivysaur.gif`,
     }, {
         id: 3,
         number: '003',
@@ -52,27 +52,27 @@ const pokedex = [{
     }
 ];
 
-for (let pokemon of pokedex) {
-
-    pokemon.png = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.number}.png`;
-    pokemon.gif = `https://img.pokemondb.net/sprites/black-white/anim/normal/${pokemon.name.toLowerCase()}.gif`;
-
-}
-
 // 🚨📌📌📌 ----- ROTAS -----
 
 app.get('/', (req, res) => {
     res.render('index', { pokedex });
 });
 
-app.get('/register', (req, res) => {
-    res.render('register', { pokedex });
+app.get('/details/:id', (req, res) => {
+    const index = Number(req.params.id);
+
+    const chosenPokemon = pokedex.find((pokemon) => pokemon.id === index);
+
+    if (chosenPokemon) {
+        res.render("details", { pokedex, chosenPokemon });
+    } else {
+        res.status(418);
+    }
+
 });
 
-app.get('/details/:id', (req, res) => {
-    const index = req.params.id;
-    const pokemonById = pokedex[index - 1];
-    res.render('details', { pokedex, chosenPokemon: pokemonById });
+app.get('/register', (req, res) => {
+    res.render('register', { pokedex });
 });
 
 app.post('/add', (req, res) => {
@@ -81,17 +81,21 @@ app.post('/add', (req, res) => {
     addedPokemon.id = Number(addedPokemon.number);
 
     console.log(addedPokemon); // FIXME:
+
     addedPokemon.png = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${addedPokemon.number}.png`;
     addedPokemon.gif = `https://img.pokemondb.net/sprites/black-white/anim/normal/${addedPokemon.name.toLowerCase()}.gif`;
 
 
     pokedex.push(addedPokemon);
 
-    console.log(pokedex); // FIXME:
+    pokedex.sort((a, b) => a.id - b.id);
+
     res.redirect('/');
 
 });
 
-
+app.get('/details', (req, res) => {
+    res.render('details', { pokedex });
+});
 
 app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
