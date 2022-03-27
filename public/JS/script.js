@@ -65,9 +65,9 @@ btnA.addEventListener('mouseenter', () => {
 });
 
 btnB.addEventListener('mouseenter', () => {
-    btnHoverTip.innerText = 'view details';
+    btnHoverTip.innerText = 'ALL Pokémon';
     btnB.style.fontFamily = 'Dripicons';
-    btnB.innerText = '';
+    btnB.innerText = '';
 });
 
 btnA.addEventListener('mouseleave', () => {
@@ -161,7 +161,7 @@ for (let item of menuItems) {
                     window.location.href = '/register';
                     break;
                 case 'menu_info':
-                    window.location.href = '/info';
+                    window.location.href = '/info'; // 👁‍🗨 INFO SCREEN
                     break;
             }
         }, 500);
@@ -179,5 +179,5 @@ btnA.addEventListener('click', () => {
 btnB.addEventListener('click', () => {
     mainContent.style.opacity = '0';
 
-    setTimeout(() => { window.location.href = `/details/${slideIndex}`; }, 500);
+    setTimeout(() => { window.location.href = `/`; }, 500);
 });

@@ -66,7 +66,7 @@ app.get('/details/:id', (req, res) => {
     if (chosenPokemon) {
         res.render("details", { pokedex, chosenPokemon });
     } else {
-        res.status(418);
+        res.sendStatus(418);
     }
 
 });
@@ -78,17 +78,15 @@ app.get('/register', (req, res) => {
 app.post('/add', (req, res) => {
     const addedPokemon = req.body;
 
+    addedPokemon.number.padStart(3, '0');
     addedPokemon.id = Number(addedPokemon.number);
-
-    console.log(addedPokemon); // FIXME:
-
+    addedPokemon.weigth = addedPokemon.weigth.replace(' ', '');
     addedPokemon.png = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${addedPokemon.number}.png`;
     addedPokemon.gif = `https://img.pokemondb.net/sprites/black-white/anim/normal/${addedPokemon.name.toLowerCase()}.gif`;
-
-
     pokedex.push(addedPokemon);
-
     pokedex.sort((a, b) => a.id - b.id);
+
+    confirmationMessage = 'New Pokémon added successfully!';
 
     res.redirect('/');
 

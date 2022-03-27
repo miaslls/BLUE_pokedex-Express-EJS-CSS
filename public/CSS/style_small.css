@@ -36,6 +36,7 @@ div#mainContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 }
 
 .mainContainer_outerContent {
@@ -47,4 +48,39 @@ div#mainContainer {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+div#confirmationMessage {
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    z-index: 99;
+}
+
+div#confirmationMessageBox {
+    width: fit-content;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #E3350D;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 0.1);
+    font-family: finalsix, sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+div#confirmationClose {
+    font-family: 'Dripicons', sans-serif;
+    transition: all 1s ease;
+}
+
+div#confirmationClose:hover {
+    transform: scale(1.5);
+    cursor: pointer;
 }

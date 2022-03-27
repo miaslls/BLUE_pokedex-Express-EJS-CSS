@@ -1,3 +1,5 @@
+register.ejs
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,44 +27,82 @@
 
                         <section id="newPokemonBox">
 
+                            <form action="/add" method="POST" id="newPokemonForm">
+
+                                <input type="text" name="number" id="numberInput" placeholder="number">
+                                <input type="text" name="name" id="nameInput" placeholder="name">
+                                <input type="text" name="type" id="typeInput" placeholder="type">
+                                <input type="text" name="height" id="heightInput" placeholder="height">
+                                <input type="text" name="weigth" id="weigthInput" placeholder="weigth">
+                                <input type="text" name="category" id="categoryInput" placeholder="category">
+                                <input type="text" name="abilities" id="abilitiesInput" placeholder="abilities">
+                                <input type="text" name="description" id="descriptionInput" placeholder="description">
+
+                                <button id="addPokemonBtn" type="submit" disabled>
+                                    add NEW
+                                    <img class="animation" id="buttonImg" src="/img/pokeball-8bit.png">
+                                    Pokémon</button>
+                            </form>
+
                             <div id="validationContainer">
 
-                                <div class="validation" id="validate_name">
+                                <div class="validation" id="validateNumber">
 
-                                    <span class="bullet" id="number">9</span> invalid NAME
-
-                                </div>
-
-                                <div class="validation" id="validate_number">
-
-                                    <span class="bullet" id="number">9</span> invalid NUMBER
+                                    <span class="bullet" id="validNumberBullet">9</span>
+                                    <span class="message" id="validNumberMessage">invalid NUMBER</span>
 
                                 </div>
 
-                                <div class="validation" id="validate_name-number">
+                                <div class="validation" id="validateName">
 
-                                    <span class="bullet" id="number">9</span> NAME and NUMBER don't match
+                                    <span class="bullet" id="validNameBullet">9</span>
+                                    <span class="message" id="validNameMessage">invalid NAME</span>
+
+                                </div>
+
+                                <div class="validation" id="validateType">
+
+                                    <span class="bullet" id="validTypeBullet">9</span>
+                                    <span class="message" id="validTypeMessage">empty TYPE</span>
+
+                                </div>
+
+                                <div class="validation" id="validateHeight">
+
+                                    <span class="bullet" id="validHeightBullet">9</span>
+                                    <span class="message" id="validHeightMessage">empty HEIGHT</span>
+
+                                </div>
+
+                                <div class="validation" id="validateWeigth">
+
+                                    <span class="bullet" id="validWeigthBullet">9</span>
+                                    <span class="message" id="validWeigthMessage">empty WEIGTH</span>
+
+                                </div>
+
+                                <div class="validation" id="validateCategory">
+
+                                    <span class="bullet" id="validCategoryBullet">9</span>
+                                    <span class="message" id="validCategoryMessage">empty CATEGORY</span>
+
+                                </div>
+
+                                <div class="validation" id="validateAbilities">
+
+                                    <span class="bullet" id="validAbilitiesBullet">9</span>
+                                    <span class="message" id="validAbilitiesMessage">empty ABILITIES</span>
+
+                                </div>
+
+                                <div class="validation" id="validateDescription">
+
+                                    <span class="bullet" id="validDescriptionBullet">9</span>
+                                    <span class="message" id="validDescriptionMessage">empty DESCRIPTION</span>
 
                                 </div>
 
                             </div>
-
-                            <form action="/add" method="POST" id="newPokemonForm">
-
-                                <input type="text" name="number" id="number" placeholder="number">
-                                <input type="text" name="name" id="name" placeholder="name">
-                                <input type="text" name="type" id="type" placeholder="type">
-                                <input type="text" name="description" id="description" placeholder="description">
-                                <input type="text" name="height" id="height" placeholder="height">
-                                <input type="text" name="weigth" id="weigth" placeholder="weigth">
-                                <input type="text" name="category" id="category" placeholder="category">
-                                <input type="text" name="abilities" id="abilities" placeholder="abilities">
-
-                                <button id="addPokemonBtn" type="submit">
-                                    add NEW
-                                    <img id="buttonImg" src="/img/pokeball-8bit.png">
-                                    Pokémon</button>
-                            </form>
 
                         </section>
 
