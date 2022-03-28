@@ -1,19 +1,28 @@
-# BLUE_MOD02_PROJ02
+# ==[BLUE-dex](https://blue-dex.herokuapp.com/)==
+
+![](https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif)
+![](https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif)
+![](https://img.pokemondb.net/sprites/black-white/anim/normal/squirtle.gif)
+![](https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif)
+
+
+Projeto MVC desenvolvido utilizando Express e EJS. 
+Aplicação lista e permite cadastro de itens em uma Pokedéx.
 
 ---
 
-## Requisitos:
+## **Rotas**
 
-Critérios de Avaliação
-Valor da entrega: 10 pontos
+- GET '/'
+- GET '/details/:id'
+- GET '/register'
+- POST '/add'
 
-Toda entrada de dados deve ser validada antes. (1) ✔
-Criar um menu de navegação em todas as telas. (1) ✔
-Criar as telas EJS. (1,5) ✔
-Responsividade em todas as telas. (0,5) ✔
-Criar a estilização das páginas. (1,0) ✔
-Criar as rotas no arquivo INDEX.JS para controlar toda aplicação. (1,5) ✔
-Após cadastrar exibir mensagem de sucesso. (0,5)
-Respeitar o padrão MVC. (1,0) ✔
-Github organizado do projeto com licença, Read.me preenchido falando do projeto e Gitignore correto. (1)
-Projeto postado no Heroku. (1) ✔
+---
+
+## **Créditos**
+
+- images & data - [Pokémon.com](https://www.pokemon.com/us/pokedex/)
+- sprites - [Pokémon DB](https://pokemondb.net/)
+- fonte   - [Dripicons](http://demo.amitjakhu.com/dripicons/)
+- fonte   - [Pokemon GB](https://fonts2u.com/pokemon-gb.font)
