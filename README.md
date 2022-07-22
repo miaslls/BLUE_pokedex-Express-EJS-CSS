@@ -7,7 +7,7 @@
 
 
 Projeto MVC desenvolvido utilizando Express e EJS. 
-Aplicação lista e permite cadastro de itens em uma Pokedéx.
+Aplicação lista e permite cadastro em memória de itens em uma Pokedéx.
 
 ---
 
