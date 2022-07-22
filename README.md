@@ -1,4 +1,4 @@
-# ==[BLUE-dex](https://blue-dex.herokuapp.com/)==
+# [BLUE-dex](https://blue-dex.herokuapp.com/)
 
 ![](https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif)
 ![](https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif)
@@ -8,6 +8,10 @@
 
 Projeto MVC desenvolvido utilizando Express e EJS. 
 Aplicação lista e permite cadastro em memória de itens em uma Pokedéx.
+
+---
+
+## 🏠 \[home\] [blue-dex.herokuapp.com](https://blue-dex.herokuapp.com/)
 
 ---
 
