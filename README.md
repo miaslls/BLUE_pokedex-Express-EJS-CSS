@@ -11,7 +11,7 @@ Aplicação lista e permite cadastro em memória de itens em uma Pokedéx.
 
 ---
 
-## 🏠 \[home\] [blue-dex.herokuapp.com](https://blue-dex.herokuapp.com/)
+## 🏠 \[home\] [bluedex.onrender.com](https://bluedex.onrender.com/)
 
 ---
 
