@@ -1,17 +1,16 @@
-# [BLUE-dex](https://blue-dex.herokuapp.com/)
+# [BLUE-dex](https://bluedex.fly.dev/)
 
 ![](https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif)
 ![](https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif)
 ![](https://img.pokemondb.net/sprites/black-white/anim/normal/squirtle.gif)
 ![](https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif)
 
-
-Projeto MVC desenvolvido utilizando Express e EJS. 
+Projeto MVC desenvolvido utilizando Express e EJS.
 Aplicação lista e permite cadastro em memória de itens em uma Pokedéx.
 
 ---
 
-## 🏠 \[home\] [bluedex.onrender.com](https://bluedex.onrender.com/)
+## 🏠 \[home\] [bluedex.fly.dev/](https://bluedex.fly.dev/)
 
 ---
 
@@ -28,5 +27,5 @@ Aplicação lista e permite cadastro em memória de itens em uma Pokedéx.
 
 - images & data - [Pokémon.com](https://www.pokemon.com/us/pokedex/)
 - sprites - [Pokémon DB](https://pokemondb.net/)
-- fonte   - [Dripicons](http://demo.amitjakhu.com/dripicons/)
-- fonte   - [Pokemon GB](https://fonts2u.com/pokemon-gb.font)
+- fonte - [Dripicons](http://demo.amitjakhu.com/dripicons/)
+- fonte - [Pokemon GB](https://fonts2u.com/pokemon-gb.font)
