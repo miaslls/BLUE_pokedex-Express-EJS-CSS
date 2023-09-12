@@ -1,5 +1,5 @@
-This page is in <img src="assets/img/flag-en.png" width="14" alt="English"> English.
-Para visualisar essa página em <img src="assets/img/flag-pt-br.png" width="14" alt="Português"> Português, [clique aqui](./README-ptbr.md).
+Essa página está em <img src="assets/img/flag-pt-br.png" width="14" alt="Português"> Português.
+To view this page in <img src="assets/img/flag-en.png" width="14" alt="English"> English, [click here](./README.md).
 
 ---
 
@@ -12,34 +12,34 @@ Para visualisar essa página em <img src="assets/img/flag-pt-br.png" width="14" 
 ![Static Badge: EJS](https://img.shields.io/badge/EJS-5a5a5a)
 ![Static Badge: CSS](https://img.shields.io/badge/CSS-5a5a5a?logo=css3)
 
-This MVC project was developed using Express and EJS, designed to manage a Pokédex. It allows listing and in-memory registration of Pokémon.
+Este projeto MVC foi desenvolvido utilizando Express e EJS, com o objetivo de gerenciar uma Pokédex. Ele permite listar e o registrar os itens em memória.
 
 ## 🔗 Demo
 
 - [bluedex.fly.dev](https://bluedex.fly.dev/)
 
-## 🟰 Table of Contents
+## 🟰 Tabela de Conteúdos
 
 <details open>
 <summary>expand / collapse</summary>
 &nbsp;
 
-- [General Info](#ℹ️-general-info)
-- [Technologies](#-technologies)
+- [Informações Gerais](#ℹ️-informações-gerais)
+- [Tecnologias](#-tecnologias)
 - [Screenshots](#%EF%B8%8F-screenshots)
-- [Install and Run](#%EF%B8%8F-install-and-run)
-- [Authors](#-authors)
-- [Acknowledgements](#-acknowledgements)
+- [Instalação](#%EF%B8%8F-instalação)
+- [Autoria](#-autoria)
+- [Aquele Abraço](#-aquele-abraço)
 
 </details>
 
-## ℹ️ General Info
+## ℹ️ Informações Gerais
 
-Proposed exercise:
+Exercício proposto:
 
-> _The Pokedex project involves creating an application with evaluation criteria that consider everything from data validation to deployment, with an emphasis on technical quality and system usability. It is necessary to create responsive EJS screens, a navigation menu, page styling, and routes in the `index.js` file, using Express to store data in memory. Additionally, adherence to the MVC pattern and proper organization in the Github repository are crucial. After registering information, the system should display success messages, and the project must go through the deployment stage to be available to the target audience._
+> _O projeto Pokedéx envolve a criação de um aplicativo com critérios de avaliação que consideram desde a validação de dados até o deploy, com ênfase na qualidade técnica e na usabilidade do sistema. É necessário criar telas EJS responsivas, um menu de navegação, estilização das páginas e rotas no arquivo `index.js`, utilizando o Express para armazenar os dados em memória. Além disso, a aderência ao padrão MVC e uma organização adequada no repositório do Github são cruciais. Após o cadastro de informações, o sistema deve exibir mensagens de sucesso, e o projeto deve passar pela etapa de deploy para estar disponível ao público-alvo._
 
-## 🧮 Technologies
+## 🧮 Tecnologias
 
 - Node.js
 - Express
@@ -60,7 +60,7 @@ Proposed exercise:
 
 </details>
 
-## ⚙️ Install and Run
+## ⚙️ Instalação
 
 <details open>
 <summary>expand / collapse</summary>
@@ -92,11 +92,11 @@ Run the project
 
 </details>
 
-## 👩‍💻 Authors
+## 👩‍💻 Autoria
 
 - [@miaslls](https://www.github.com/miaslls)
 
-## 🫶 Acknowledgements
+## 🫶 Aquele Abraço
 
 - [pokemon.com](https://www.pokemon.com/us/pokedex/)
 - [pokemondb.net](https://pokemondb.net/)
