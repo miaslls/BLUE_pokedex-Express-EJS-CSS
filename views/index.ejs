@@ -3,11 +3,11 @@
 
 <head>
 
-    <%- include( 'partials/head'); %>
+    <%- include( 'partials/head' ); %>
 
         <link rel="stylesheet" href="/CSS/index.css">
 
-        <title>BLUE-dex</title>
+        <title>BLUEdex</title>
 </head>
 
 <body>
@@ -35,11 +35,12 @@
 
                         <section id="pokemonCards_all">
 
-                            <% pokedex.forEach((pokemon) => {  %>
+                            <% pokedex.forEach((pokemon)=> { %>
 
                                 <div class="pokemonCardContainer">
 
-                                    <div class="pokemonCardBox" id="<%= pokemon.id %>" style="background-image: url('<%= pokemon.png %>')">
+                                    <div class="pokemonCardBox" id="<%= pokemon.id %>"
+                                        style="background-image: url('<%= pokemon.png %>')">
 
                                         <div class="pokeballContainer">
 
