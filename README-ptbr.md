@@ -12,7 +12,7 @@ To view this page in <img src="assets/img/flag-en.png" width="14" alt="English">
 ![Static Badge: EJS](https://img.shields.io/badge/EJS-5a5a5a)
 ![Static Badge: CSS](https://img.shields.io/badge/CSS-5a5a5a?logo=css3)
 
-Este projeto MVC foi desenvolvido utilizando Express e EJS, com o objetivo de gerenciar uma Pokédex. Ele permite listar e o registrar os itens em memória.
+Esta aplicação estilo Pokédex permite listar e registrar _Pokémon_ em memória.
 
 ## 🔗 Demo
 
@@ -69,13 +69,13 @@ Exercício proposto:
 Clone the project
 
 ```bash
-> git clone https://github.com/miaslls/BLUEdex_Express-EJS-CSS.git
+> git clone https://github.com/miaslls/BLUEdex.git
 ```
 
 Go to the project directory
 
 ```bash
-> cd BLUEdex_Express-EJS-CSS
+> cd BLUEdex
 ```
 
 Install dependencies
@@ -101,6 +101,36 @@ Run the project
 - [pokemon.com](https://www.pokemon.com/us/pokedex/)
 - [pokemondb.net](https://pokemondb.net/)
 - [dripicons](http://demo.amitjakhu.com/dripicons/)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
