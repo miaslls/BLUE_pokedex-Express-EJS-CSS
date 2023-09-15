@@ -18,21 +18,6 @@ This Pokedéx-style application allows listing and in-memory registration of _Po
 
 - [bluedex.fly.dev](https://bluedex.fly.dev/)
 
-## 🟰 Table of Contents
-
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
-- [General Info](#ℹ️-general-info)
-- [Technologies](#-technologies)
-- [Screenshots](#%EF%B8%8F-screenshots)
-- [Install and Run](#%EF%B8%8F-install-and-run)
-- [Authors](#-authors)
-- [Acknowledgements](#-acknowledgements)
-
-</details>
-
 ## ℹ️ General Info
 
 Proposed exercise:
@@ -48,23 +33,13 @@ Proposed exercise:
 
 ## 🖼️ Screenshots
 
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
 ![BLUEdex App Screenshot](assets/img/screenshots/01.gif)
 
 ![BLUEdex App Screenshot](assets/img/screenshots/02.gif)
 
 ![BLUEdex App Screenshot](assets/img/screenshots/03.gif)
 
-</details>
-
 ## ⚙️ Install and Run
-
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
 
 Clone the project
 
@@ -90,8 +65,6 @@ Run the project
 > npm run start
 ```
 
-</details>
-
 ## 👩‍💻 Authors
 
 - [@miaslls](https://www.github.com/miaslls)
@@ -101,12 +74,6 @@ Run the project
 - [pokemon.com](https://www.pokemon.com/us/pokedex/)
 - [pokemondb.net](https://pokemondb.net/)
 - [dripicons](http://demo.amitjakhu.com/dripicons/)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 

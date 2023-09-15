@@ -18,21 +18,6 @@ Esta aplicação estilo Pokédex permite listar e registrar _Pokémon_ em memór
 
 - [bluedex.fly.dev](https://bluedex.fly.dev/)
 
-## 🟰 Tabela de Conteúdos
-
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
-- [Informações Gerais](#ℹ️-informações-gerais)
-- [Tecnologias](#-tecnologias)
-- [Screenshots](#%EF%B8%8F-screenshots)
-- [Instalação](#%EF%B8%8F-instalação)
-- [Autoria](#-autoria)
-- [Aquele Abraço](#-aquele-abraço)
-
-</details>
-
 ## ℹ️ Informações Gerais
 
 Exercício proposto:
@@ -48,23 +33,13 @@ Exercício proposto:
 
 ## 🖼️ Screenshots
 
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
-
 ![BLUEdex App Screenshot](assets/img/screenshots/01.gif)
 
 ![BLUEdex App Screenshot](assets/img/screenshots/02.gif)
 
 ![BLUEdex App Screenshot](assets/img/screenshots/03.gif)
 
-</details>
-
 ## ⚙️ Instalação
-
-<details open>
-<summary>expand / collapse</summary>
-&nbsp;
 
 Clone the project
 
@@ -90,23 +65,15 @@ Run the project
 > npm run start
 ```
 
-</details>
-
 ## 👩‍💻 Autoria
 
 - [@miaslls](https://www.github.com/miaslls)
 
-## 🫶 Aquele Abraço
+## 🫶 Recursos / Agradecimentos
 
 - [pokemon.com](https://www.pokemon.com/us/pokedex/)
 - [pokemondb.net](https://pokemondb.net/)
 - [dripicons](http://demo.amitjakhu.com/dripicons/)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
