@@ -6,7 +6,6 @@ Para visualizar essa página em <img src="assets/img/flag-pt-br.png" width="14" 
 # ![Pokéball](public/img/pokeball-8bit.png) BLUEdex
 
 ![Static Badge: Study](https://img.shields.io/badge/study-blue)
-![Static Badge: Version - 1.0.0](https://img.shields.io/badge/version-1.0.0-green)
 ![Static Badge: Node.js](https://img.shields.io/badge/Node.js-5a5a5a?logo=nodedotjs)
 ![Static Badge: Express](https://img.shields.io/badge/Express-5a5a5a?logo=express)
 ![Static Badge: EJS](https://img.shields.io/badge/EJS-5a5a5a)
