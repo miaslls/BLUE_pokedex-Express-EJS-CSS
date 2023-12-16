@@ -15,7 +15,7 @@ Esta aplicação estilo Pokédex permite listar e registrar _Pokémon_ em memór
 
 ## 🔗 Demo
 
-- [bluedex.fly.dev](https://bluedex.fly.dev/)
+- [bluedex.camilasalles.dev](https://bluedex.camilasalles.dev/)
 
 ## ℹ️ Informações Gerais
 

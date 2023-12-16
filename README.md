@@ -15,7 +15,7 @@ This Pokedéx-style application allows listing and in-memory registration of _Po
 
 ## 🔗 Demo
 
-- [bluedex.fly.dev](https://bluedex.fly.dev/)
+- [bluedex.camilasalles.dev](https://bluedex.camilasalles.dev/)
 
 ## ℹ️ General Info
 
